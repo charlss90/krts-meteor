@@ -1,0 +1,477 @@
+/* CSS declarations go here */
+html, body {
+  padding: 0px;
+  overflow: hidden;
+  height: 100%;
+}
+
+body img {
+	border-style:none;
+	border:0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.navbar {
+	border:none;
+}
+
+.container {
+	width: 100%;
+	height: 92%;
+	padding:0;
+}
+
+.header{
+/*	padding: 0 20px;*/
+	height: 8%;
+	min-height: 50px;
+	max-height: 55px;
+	margin-bottom: 0;
+	background-color: #563d7c;
+	color:white;
+}
+.left-nav{
+	overflow: hidden;
+	float:left;
+	width: 30%;
+	margin:0;
+	padding-left:30px;
+}
+.right-nav form{
+	width: 80%;
+	margin-top: 7px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.right-nav .form-group {
+	margin-bottom: 0;
+
+}
+
+.right-nav .pull-right {
+	width: 20%;
+	margin-left: 0;
+	white-space:nowrap;
+}
+.right-nav {
+	float:left;
+	width:70%;
+	margin:0;
+	padding-right: 0px;
+}
+
+.header h1 { 
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+.header h4.username {
+	color:white;
+}
+
+h4.username {
+	margin-top: 15px;
+}
+
+.right-header {
+	display: inline;
+	width:auto;
+	margin-left: 30px;
+}
+
+.navbar-form {
+	width: 60%;
+}
+
+.navbar-form .form-group {
+	width: 100%;
+}
+
+input#search {
+	margin-top: 8px;
+	font-size: 1.5em;
+	width: 100%;
+}
+
+.sider-bar-left {
+	width: 100%;
+}
+
+
+.right-header .title {
+	margin:0;
+	float:right;
+	margin-right: 10px;
+}
+
+.right-header .img {
+	width :40px;
+	height: 40px;
+	margin:0;
+	float: right;
+	margin-top: 10px;
+}
+
+.right-header .img img {
+	height: 30px;
+	width: 30px;
+	border-radius:50%;
+}
+
+.access {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 300px;
+	padding: 10px;
+}
+
+.access h3 {
+	text-align: center;
+}
+.access input {
+	width: 100%;
+}
+
+.btn-add {
+	margin-left: 10px;
+}
+
+.product-cart {
+	float:left;
+	width: 30%;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	margin:0;
+}
+
+.product-cart table tbody tr:hover {
+	background-color: #563d7c;
+	color: white;
+}
+
+.product-cart table td:nth-child(1) {
+	width:140px;
+}
+
+.product-cart table tr:hover {
+	cursor: default;
+}
+
+
+.product-cart .footer {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom:0;
+}
+
+.product-cart .footer .right-box:hover {
+	background-color: #563d7c;
+}
+
+
+.product-cart .footer .right-box {
+	border-radius: 4px;
+	background-color: #363636;
+	color: white;
+	border: 1px solid #fff;
+	padding: 5px;
+	width: 40%;
+	float: right;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.product-cart .footer .right-box h1 {
+	margin:0;
+}
+
+.product-cart table td{
+	box-sizing: border-box;
+}
+
+.page-wrapper {
+	float:left;
+	width:65%;
+	height: 100%;
+	margin:0;
+	overflow: hidden !important;
+	position: relative;
+
+}
+
+.page-wrapper header {
+	margin:0;
+	height: 80px;
+	padding: 10px 30px;
+}
+
+.page-wrapper header input {
+	height: 40px;
+	width: 100%;
+	font-size: 1.75em;
+	margin-top: 10px;
+	background: url(../images/icon-search.png) no-repeat scroll 7px 7px;
+	background-size: 25px 25px;
+	background-position: 99% 5px;
+}
+
+.page-wrapper > .search-dash {
+	top: 0;
+}
+
+
+#search-dash,
+.search-dash {
+	margin-left: 150px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*right: -956px;*/
+	z-index: 100;
+	background-color: white;
+	-webkit-box-shadow: -0px 10px 10px 0px rgba(50, 50, 50, 0.68);
+	-moz-box-shadow:    -0px 10px 10px 0px rgba(50, 50, 50, 0.68);
+	box-shadow:         -0px 10px 10px 0px rgba(50, 50, 50, 0.68);
+	-webkit-transition: -webkit-transition 5s ease-in-out;
+}
+#search-dash {
+	z-index: 1000;
+}
+
+.transparent-product,
+.transparent {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	z-index: 50;
+	background-color: rgba(0, 0, 0, 0.25);
+	
+}
+
+.page-wrapper > .transparent {
+	z-index: 200;
+}
+
+.page-wrapper > .transparent-product {
+	top:0;
+	left: 0;
+	z-index: 25;
+}
+
+.translation {
+	-webkit-transform:translate(-854px, 0);
+}
+
+.box-product {
+	width: 700px;
+	height: 70px;
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 4px 4px;
+	margin: 0;
+	margin-left:25px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.box-product:hover {
+	background-color: #563d7c;
+	color:white;
+}
+
+
+.box-product .image {
+	position: relative;
+	display: inline;
+	float: left;
+	width: 50px;
+	margin-right: 10px;
+	height: 100%;
+}
+
+.box-product .image img {
+	background-image: url(../images/product.png);
+	background-size: 50px;
+}
+
+.box-product .wrapper {
+	position: relative;
+	float:left;
+	width: 615px;
+	margin:0;
+}
+
+.box-product .title {
+	width: 100%;
+	margin: 0;
+	float: left;
+}
+
+.box-product .title h1 {
+	margin:0;
+	font-size:1.5em;
+}
+
+.right-box .title h1 {
+	font-size: 2em;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.box-product span.price {
+	float: right;
+	font-size: 1.7em;
+	margin-top: 10px;
+}
+
+.box-product span.stock {
+	float: left;
+	clear:both;
+	margin: 0;
+
+}
+
+.box-product .left-box {
+	width: 80%;
+}
+
+.left-box {
+	float:left;
+}
+
+.right-box {
+	float:right;
+}
+
+.right-box .title {
+
+	width: 70%;
+	float: left;
+	margin-top: 5px;
+}
+
+.right-box .shop{
+	text-align: center;
+	float: right;
+	width: 30%;
+	margin-top: 4px;
+	font-size: 2em;
+}
+
+.right-box .shop:hover {
+	color:##efefef;
+	cursor: pointer;
+}
+
+.category-dash {
+	width:100%;
+	margin:0 auto;
+	padding: 10px 20px;
+	padding-top: 25px;
+	overflow: auto;
+}
+
+#search-dash {
+	padding-top: 25px;
+}
+
+.box-category {
+	float: left;
+	width: 250px;
+	height: 200px;
+	border: 1px solid #ddd;
+	border-radius: 4px 4px 4px 4px;
+	margin: 10px 10px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+
+.box-category:hover {
+	background-color: #563d7c;
+	color:white;
+}
+
+.box-category .top-box {
+	height: 60%;
+}
+
+.box-category .bottom-box, 
+.box-category .top-box {
+	width: 100%;
+}
+
+
+.top-box .image {
+	width:100%;
+	height: 100%;
+	background-image: url(../images/product.png);
+	background-repeat: repeat;
+}
+
+.top-box .image img {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bottom-box .title { 
+	position: relative;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.bottom-box .title h1 {
+	margin: 0;
+	font-size: 1.7em;
+	text-align:center;
+}
+
+div.image img {
+	width:50px;
+	height: 50px;
+}
+
+
+.cash-bar {
+	position: relative;
+	/*min-width: 60px;*/
+	width: 5%;
+	height: 100%;
+	margin:0;
+	float: right;
+	background-color: #363636;
+}
+
+.pay {
+	width: 60px;
+	position: absolute;
+	bottom: 10px;
+	left:0;
+	right:0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.pay span {
+	width: 60px;
+	height:60px;
+	text-align: center;
+	font-size: 40px;
+	color:white;
+}
+
+.pay span:hover {
+	color:#563d7c;
+}
+
+.pay img {
+	width: 60px;
+	height: 60px;
+}

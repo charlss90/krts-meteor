@@ -1,0 +1,16 @@
+<head>
+  <title>kratos</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+	{{> header}}
+	{{#if loggedUser}}
+		{{> dashboard}}
+	{{else}}
+		{{> login}}
+	{{/if}}
+</template>

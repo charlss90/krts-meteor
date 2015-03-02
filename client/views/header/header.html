@@ -1,0 +1,33 @@
+<template name="header">
+	<nav class="navbar navbar-default navbar-static-top header">
+		<div class="left-nav">
+			<div class="pull-left">
+				<h1>Kratos</h1>
+			</div>
+		</div>
+		{{#if loggedIn}}
+		<div class="right-nav">
+			<div class="nav pull-right right-header dropdown">
+				<a href="" data-toggle="dropdown" class="dropdown-toggle">
+					<div class="img">
+						<img src="images/user.jpg">
+					</div>
+					<div class="title">
+						<h4 class="username"> {{username}} </h4>
+					</div>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="" id="options">Options</a> </li>
+					<li><a href="" id="logout">Logout</a></li>
+				</ul>
+
+			</div>
+			<form role="search">
+			    <div class="form-group">
+			        <input id="search" type="text" class="form-control" placeholder="Search">
+			    </div>
+			</form>
+		</div>
+		{{/if}}
+	</nav>
+</template>

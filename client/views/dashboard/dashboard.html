@@ -1,0 +1,151 @@
+<template name="dashboard">
+<div class="container">
+	{{> Cart}}
+	{{> productSearch}}
+	{{> cashBar}}
+</div>
+
+
+</template>
+
+<template name="Cart">
+	<section class="navbar-default navbar-static-side product-cart side-bar-left">
+		<div class="sidebar-collapse">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Subtotal</th>
+						<th>#</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody class="table-striped">
+					{{#each products}}
+						{{> productCart}}
+					{{/each}}
+				</tbody>
+			</table>
+			<section class="footer">
+				<div class="right-box">
+					<div class="title">
+						<h1>{{totalCart}}€</h1>						
+					</div>
+					<div class="shop">
+						<span class="glyphicon glyphicon-shopping-cart"></span>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+</template>
+
+<template name="productCart">
+	<tr>
+		<td>{{name}}</td>
+		<td>{{basePrice}}€</td>
+		<td>x1</td>
+		<td>{{basePrice}}€</td> 
+		<td>
+			<span class="glyphicon glyphicon-remove removeProduct"></span>
+		</td>
+	</tr>
+</template>
+
+<template name="productSearch" >
+	<div class="page-wrapper">
+<!-- 		<header>
+			<div class="form-group">
+				<input id="search" class="form-control" type="text" placeholder="Search, name product, code product .." >
+			</div>
+		</header> -->
+		{{#if show_search}}
+			{{> productDash}}
+		{{/if}}
+		{{> categoryDash}}
+
+	</div>
+
+
+</template>
+
+<template name="categoryDash">
+	<section class="category-dash">
+		{{#each categories}}
+			{{> category}}
+		{{/each}}
+	</section>
+	{{#if showCategoryProducts}}
+		{{> categoryProducts}}
+	{{/if}}
+</template>
+
+<template name="productDash">
+	<div class="transparent"></div>
+	<section id="search-dash">
+		{{#each products}}
+			{{> product}}
+		{{/each}}
+	</section>
+</template>
+
+<template name="category" >
+	<div class="box-category">
+		<div class="top-box">
+			<div class="image">
+				<img src="">
+			</div>
+		</div>
+		<div class="bottom-box">
+			<span class="title">
+				<h1>{{name}}</h1>
+			</span>
+		</div>
+	</div>
+</template>
+
+<template name="categoryProducts">
+	<div class="transparent-product"></div>
+	<section class="search-dash">
+		{{#each products}}
+			{{> category}}
+		{{/each}}
+	</section>
+</template>
+
+<template name="product">
+	<div class="box-product">
+		<div class="image">
+			<img src="" />
+		</div>
+		<div class="wrapper">
+			<div class="left-box">
+				<span class="title"> <h1>{{name}}</h1></span>
+				<span class="stock"><b>Stock:</b> {{stock}}</span>
+			</div>
+			<div class="right-box">
+				<span class="price"><b>{{basePrice}}€</b></span>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<!-- <template name="methodPay">
+	<div class="searchDash">
+	{{#each methodPays}}
+		{{> methodPay}}
+	{{/}}
+	</div>
+</template>
+
+<template name="methodPay">
+	
+</template> -->
+
+
+<template name="cashBar">
+	<div class="cash-bar">
+	</div>
+</template>
